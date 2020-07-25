@@ -1,4 +1,4 @@
-# AWS Maven Wagon
+# AWS Maven Wagon Support JDK 11
 ##NOTE: THIS PROJECT IS NOT SUPPORTED ANYMORE!!!
 
 [![GitHub version](https://badge.fury.io/gh/platform-team%2Faws-maven.svg)](http://badge.fury.io/gh/platform-team%2Faws-maven)
