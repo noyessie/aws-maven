@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.aws;
+package com.github.noyessie.plugin.aws;
 
 import com.amazonaws.auth.AWSCredentialsProviderChain;
 import com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin;
+package com.github.noyessie.plugin;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.ClientConfiguration;
@@ -29,13 +29,14 @@ import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
-import com.github.platform.team.plugin.aws.AWSMavenCredentialsProviderChain;
-import com.github.platform.team.plugin.data.TransferProgress;
-import com.github.platform.team.plugin.data.transfer.TransferProgressFileInputStream;
-import com.github.platform.team.plugin.data.transfer.TransferProgressFileOutputStream;
-import com.github.platform.team.plugin.maven.AbstractWagon;
-import com.github.platform.team.plugin.util.IOUtils;
-import com.github.platform.team.plugin.util.S3Utils;
+import com.github.noyessie.plugin.aws.AWSMavenCredentialsProviderChain;
+import com.github.noyessie.plugin.data.TransferProgress;
+import com.github.noyessie.plugin.data.transfer.TransferProgressFileInputStream;
+import com.github.noyessie.plugin.data.transfer.TransferProgressFileOutputStream;
+import com.github.noyessie.plugin.maven.AbstractWagon;
+import com.github.noyessie.plugin.util.IOUtils;
+import com.github.noyessie.plugin.util.S3Utils;
+
 import org.apache.maven.wagon.ResourceDoesNotExistException;
 import org.apache.maven.wagon.TransferFailedException;
 import org.apache.maven.wagon.authentication.AuthenticationException;

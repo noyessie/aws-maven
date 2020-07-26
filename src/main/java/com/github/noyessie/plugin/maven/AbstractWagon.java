@@ -14,14 +14,8 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.maven;
+package com.github.noyessie.plugin.maven;
 
-import com.github.platform.team.plugin.data.SessionListenerSupport;
-import com.github.platform.team.plugin.data.TransferListenerSupport;
-import com.github.platform.team.plugin.data.TransferProgress;
-import com.github.platform.team.plugin.data.transfer.StandardSessionListenerSupport;
-import com.github.platform.team.plugin.data.transfer.StandardTransferListenerSupport;
-import com.github.platform.team.plugin.data.transfer.StandardTransferProgress;
 import org.apache.maven.wagon.ConnectionException;
 import org.apache.maven.wagon.ResourceDoesNotExistException;
 import org.apache.maven.wagon.TransferFailedException;
@@ -36,6 +30,13 @@ import org.apache.maven.wagon.proxy.ProxyInfo;
 import org.apache.maven.wagon.proxy.ProxyInfoProvider;
 import org.apache.maven.wagon.repository.Repository;
 import org.apache.maven.wagon.resource.Resource;
+
+import com.github.noyessie.plugin.data.SessionListenerSupport;
+import com.github.noyessie.plugin.data.TransferListenerSupport;
+import com.github.noyessie.plugin.data.TransferProgress;
+import com.github.noyessie.plugin.data.transfer.StandardSessionListenerSupport;
+import com.github.noyessie.plugin.data.transfer.StandardTransferListenerSupport;
+import com.github.noyessie.plugin.data.transfer.StandardTransferProgress;
 
 import java.io.File;
 import java.util.List;

@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.data.transfer;
+package com.github.noyessie.plugin.data.transfer;
 
-import com.github.platform.team.plugin.data.TransferListenerSupport;
 import org.apache.maven.wagon.Wagon;
 import org.apache.maven.wagon.events.TransferEvent;
 import org.apache.maven.wagon.events.TransferListener;
 import org.apache.maven.wagon.resource.Resource;
+
+import com.github.noyessie.plugin.data.TransferListenerSupport;
 
 import java.util.HashSet;
 import java.util.Set;

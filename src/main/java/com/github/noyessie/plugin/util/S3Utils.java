@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.util;
+package com.github.noyessie.plugin.util;
 
 import com.amazonaws.ClientConfiguration;
 import org.apache.maven.wagon.proxy.ProxyInfo;

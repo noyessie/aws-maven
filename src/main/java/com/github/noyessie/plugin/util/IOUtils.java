@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.util;
+package com.github.noyessie.plugin.util;
 
 import java.io.Closeable;
 import java.io.IOException;

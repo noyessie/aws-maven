@@ -14,25 +14,26 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.maven;
+package com.github.noyessie.plugin.aws;
 
-import org.apache.maven.wagon.proxy.ProxyInfo;
-import org.apache.maven.wagon.proxy.ProxyInfoProvider;
+import com.amazonaws.auth.AWSCredentials;
+import org.apache.maven.wagon.authentication.AuthenticationInfo;
 
-final class NullProtectingProxyInfoProvider implements ProxyInfoProvider {
+public class AWSMavenCredentials implements AWSCredentials {
 
-    private final ProxyInfo proxyInfo;
+    private final AuthenticationInfo authenticationInfo;
 
-    NullProtectingProxyInfoProvider(ProxyInfo proxyInfo) {
-        this.proxyInfo = proxyInfo;
+    public AWSMavenCredentials(AuthenticationInfo authenticationInfo) {
+        this.authenticationInfo = authenticationInfo;
     }
 
     @Override
-    public ProxyInfo getProxyInfo(String protocol) {
-        if ((protocol == null) || (this.proxyInfo == null) || protocol.equalsIgnoreCase(this.proxyInfo.getType())) {
-            return this.proxyInfo;
-        } else {
-            return null;
-        }
+    public String getAWSAccessKeyId() {
+        return this.authenticationInfo.getUserName();
+    }
+
+    @Override
+    public String getAWSSecretKey() {
+        return this.authenticationInfo.getPassword();
     }
 }

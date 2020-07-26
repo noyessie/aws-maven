@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.data.transfer;
-
-import com.github.platform.team.plugin.data.TransferProgress;
+package com.github.noyessie.plugin.data.transfer;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
+import com.github.noyessie.plugin.data.TransferProgress;
 
 public final class TransferProgressFileInputStream extends FileInputStream {
 

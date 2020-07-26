@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.data;
+package com.github.noyessie.plugin.data;
 
 import org.apache.maven.wagon.events.TransferListener;
 import org.apache.maven.wagon.resource.Resource;

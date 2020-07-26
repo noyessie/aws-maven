@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package com.github.platform.team.plugin.data.transfer;
+package com.github.noyessie.plugin.data.transfer;
 
-import com.github.platform.team.plugin.data.TransferListenerSupport;
-import com.github.platform.team.plugin.data.TransferProgress;
 import org.apache.maven.wagon.resource.Resource;
+
+import com.github.noyessie.plugin.data.TransferListenerSupport;
+import com.github.noyessie.plugin.data.TransferProgress;
 
 public final class StandardTransferProgress implements TransferProgress {
 
